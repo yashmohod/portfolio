@@ -1,38 +1,227 @@
 .App {
+  background-color: #000500;
+  height: auto;
+  width: 100vw;
+}
+
+body {
+  /* overflow: hidden; */
+}
+
+.cavasHolder {
+  width: 100%;
+  height: 60vh;
+}
+
+.introholder {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  padding-top: 5vh;
+  flex-direction: column;
+  /* align-content: center;
+  justify-content: center; */
+}
+
+.intro {
+  display: flex;
+  height: 20vh;
+  width: 100%;
+
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  color: #ACADBC;
+
   text-align: center;
+
+  background: rgba(155, 158, 206, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (max-width: 768px) {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .cavasHolder {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .introholder {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .intro {
+    height: 20vh;
+    width: 100%;
+  }
+
+  .rightcol {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rightcol {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 5vh;
+  height: 93vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.education {
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  color: #6665dd;
+
+  text-align: center;
+
+}
+
+.educationText {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 10px;
+  text-align: start;
+  align-self: center;
+  color: #9b9ece;
+  background: rgba(155, 158, 206, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  color: #6665dd;
+
+  text-align: center;
+  margin-top: 5vh;
+
+}
+
+.project {
+  display: flex;
+  /* flex-direction: column; */
+  width: 95%;
+  /* text-align: start; */
+  color: #9b9ece;
+  align-self: center;
+  padding-bottom: 10px;
+  margin: 10px;
+  background: rgba(155, 158, 206, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+
+}
+
+.pics {
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.pics img {
+  width: 100%;
+  height: 100%;
+}
+
+.pics img:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+
+
+.description {
+  padding: 10px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.project h3 a {
+  color: #9b9ece;
+  text-decoration: none;
+}
+
+.project h3 a:hover {
+  color: #acadbc;
+}
+
+.project a {
+  color: #6665dd;
+  text-decoration: none;
+}
+
+.project a:hover {
+  color: #acadbc;
+}
+
+
+
+
+.mouse-cursor-gradient-tracking {
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
   color: white;
+  /* cursor: pointer; */
+  outline: none;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.mouse-cursor-gradient-tracking span {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mouse-cursor-gradient-tracking::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #333d334a, transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.mouse-cursor-gradient-tracking:hover::before {
+  --size: 900px;
 }

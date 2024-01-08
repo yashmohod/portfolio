@@ -1,0 +1,15 @@
+
+
+.caruselDiv {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.caruselDiv img {
+    width: 100%;
+    height: auto;
+}
