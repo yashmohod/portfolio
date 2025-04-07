@@ -33,9 +33,9 @@ export default function Home() {
     ]
 
     return (
-        <div className="flex flex-col ml-[-10]">
-            <video src={"/vid.mp4"} className="fixed  opacity-40 z-[-1]" autoPlay muted loop>
-            </video>
+        <div className="flex flex-col ">
+            <iframe id="bg_vide" src="https://www.youtube.com/embed/ofpB4Oz_0ZE?autoplay=1&amp;mute=1"
+                className="fixed top-[-300] md:top-0 left-0 h-lvh w-full   opacity-40 z-[-1] justify-center items-center" ></iframe>
             <div className="flex flex-col sm:flex-row w-100% h-dvh sm:h-dvh  justify-center">
                 <div className="flex flex-col w-100% h-3/5 sm:h-full  sm:w-1/2 justify-end sm:justify-center items-center sm:pt-5">
                     <Image
