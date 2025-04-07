@@ -34,8 +34,8 @@ export default function Home() {
 
     return (
         <div>
-            {/* <video src={"/path.mp4"} className="fixed top-[-100]  left-0  md:w-full  z-[-1] flex items-center justify-center " autoPlay muted loop>
-            </video> */}
+            <video src={"/path2.mp4"} className="fixed top-[-100]  left-0  md:w-full  z-[-1] flex items-center justify-center " autoPlay muted loop>
+            </video>
             <div className="flex flex-col sm:flex-row w-100% h-dvh sm:h-dvh  justify-center">
                 <div className="flex flex-col w-100% h-3/5 sm:h-full  sm:w-1/2 justify-end sm:justify-center items-center sm:pt-5">
                     <Image

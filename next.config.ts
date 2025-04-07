@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
     images: {
         unoptimized: true, // Disable default image optimization
     },
+    assetPrefix: '/out',
+    basePath: '/out',
     output: 'export'
 };
 
