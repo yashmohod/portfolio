@@ -34,8 +34,9 @@ export default function Home() {
 
     return (
         <div className="flex flex-col ">
-            <iframe id="bg_vide" src="https://www.youtube.com/embed/ofpB4Oz_0ZE?autoplay=1&amp;mute=1"
-                className="fixed top-[-300] md:top-0 left-0 h-lvh w-full   opacity-40 z-[-1] justify-center items-center" ></iframe>
+            {/* <iframe id="bg_vide" src="https://www.youtube.com/embed/ofpB4Oz_0ZE?autoplay=1&amp;mute=1&amp;controls=0&amp;modestbranding=1&amp;loop=1"
+                className="fixed top-[-300] md:top-0 left-0 h-lvh w-full   opacity-40 z-[-1] justify-center items-center" ></iframe> */}
+            <iframe src="https://www.youtube.com/embed/ofpB4Oz_0ZE?autoplay=1&amp;mute=1&amp;controls=0&amp;modestbranding=1&amp;loop=1&amp;playlist=ofpB4Oz_0ZE&amp;showinfo=0&amp;rel=0" className="fixed top-[-300] md:top-[-65] left-0 h-lvh w-full  opacity-40 z-[-1] justify-center items-center" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             <div className="flex flex-col sm:flex-row w-100% h-dvh sm:h-dvh  justify-center">
                 <div className="flex flex-col w-100% h-3/5 sm:h-full  sm:w-1/2 justify-end sm:justify-center items-center sm:pt-5">
                     <Image

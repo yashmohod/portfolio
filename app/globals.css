@@ -121,8 +121,3 @@
         @apply bg-background text-foreground;
     }
 }
-
-
-#bg_video {
-    object-fit: cover;
-}
