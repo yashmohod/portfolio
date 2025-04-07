@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
-const dev = true;
+const dev = false;
 
 const nextConfig: NextConfig = {
     reactStrictMode: true,
@@ -9,20 +9,7 @@ const nextConfig: NextConfig = {
     assetPrefix: dev ? '/out' : "",
     basePath: dev ? '/out' : "",
     output: 'export',
-    webpack(config, { isServer }) {
-        const prefix = config.assetPrefix ?? config.basePath ?? '';
-        config.module.rules.push({
-            test: /\.mp4$/,
-            use: [{
-                loader: 'file-loader',
-                options: {
-                    publicPath: `${prefix}/_next/static/media/`,
-                    outputPath: `${isServer ? '../' : ''}static/media/`,
-                    name: '[name].[hash].[ext]',
-                },
-            }],
-        })
-    }
+
 
 };
 

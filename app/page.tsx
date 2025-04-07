@@ -4,7 +4,6 @@ import mypic from "@/public/IMG_1591.png";
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Separator } from "@/components/ui/separator"
-import { vid } from "@/public/vid.mp4"
 import {
     Carousel,
     CarouselContent,
@@ -35,7 +34,7 @@ export default function Home() {
 
     return (
         <div className="flex flex-col ml-[-10]">
-            <video src={vid} className="fixed  opacity-40 z-[-1]" autoPlay muted loop>
+            <video src={"/vid.mp4"} className="fixed  opacity-40 z-[-1]" autoPlay muted loop>
             </video>
             <div className="flex flex-col sm:flex-row w-100% h-dvh sm:h-dvh  justify-center">
                 <div className="flex flex-col w-100% h-3/5 sm:h-full  sm:w-1/2 justify-end sm:justify-center items-center sm:pt-5">
