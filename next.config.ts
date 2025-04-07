@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
-
+const dev = true;
 const nextConfig: NextConfig = {
     reactStrictMode: true,
     images: {
         unoptimized: true, // Disable default image optimization
     },
-    assetPrefix: '/out',
-    basePath: '/out',
+    assetPrefix: dev ? '/out' : "",
+    basePath: dev ? '/out' : "",
     output: 'export'
 };
 
