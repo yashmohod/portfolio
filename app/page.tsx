@@ -20,6 +20,12 @@ export default function Home() {
 
     const projects = [
         {
+            title: "Anzen V1",
+            description: temp_description,
+            img_path: ["anzen_v1/anzen1.png", "anzen_v1/anzen2.png", "anzen_v1/anzen3.png",],
+            githubLink: "https://github.com/yashmohod/Anzen.git"
+        },
+        {
             title: "32-Bit CPU",
             description: "This is a 32-bit CPU simulation in digital circuit software in which I implemented a basic instruction set to move data, perform arithmetic, and perform some logical operations. ",
             img_path: ["cpu/cpu.png", "cpu/cpu2.png", "cpu/cpu3.png"],
