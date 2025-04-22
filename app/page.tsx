@@ -3,7 +3,6 @@ import Image from "next/image";
 import mypic from "@/public/IMG_1591.png";
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import ReactPlayer from 'react-player'
 import { Separator } from "@/components/ui/separator"
 
 import {

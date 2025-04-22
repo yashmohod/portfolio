@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
-const dev = false;
+const dev = true;
 
 const nextConfig: NextConfig = {
     reactStrictMode: true,
@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
     assetPrefix: dev ? '/out' : "",
     basePath: dev ? '/out' : "",
     output: 'export',
+
     webpack(config) {
         config.module.rules.push({
             test: /\.(mp4|webm|ogg|mp3|wav|flac|aac|rtf|doc|docx)$/,
