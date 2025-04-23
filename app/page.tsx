@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Separator } from "@/components/ui/separator"
 
+
 import {
     Carousel,
     CarouselContent,
@@ -16,15 +17,23 @@ import {
 
 // import resume from "@/public/"
 export default function Home() {
+
     const temp_description = "orem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet augue vitae justo convallis semper. Etiam vel pulvinar ligula. Maecenas sit amet fringilla nisl, et aliquam mi. Nullam aliquam elit non magna mollis efficitur. Etiam condimentum vel justo at volutpat."
 
     const projects = [
         {
-            title: "Anzen V1",
-            description: temp_description,
-            img_path: ["anzen_v1/anzen1.png", "anzen_v1/anzen2.png", "anzen_v1/anzen3.png",],
-            githubLink: "https://github.com/yashmohod/Anzen.git"
+            title: "Anzen V2",
+            description: "Anzen is a data logging and time card website. It was used by Student Auxiliary Safety patrol at Ithaca college Office of public Safety. ",
+            img_path: ["anzen_v2/anzen1.png", "anzen_v2/anzen2.png", "anzen_v2/anzen3.png",],
+            githubLink: "git@github.com:yashmohod/AnzenV2.git"
         },
+        {
+            title: "Thermal Diffusion",
+            description: "This is a simulation of 1D thermal diffusion in a Copper rod, I created while working on a research paper with Professor Matthew C. Sullivan at Ithaca College.",
+            img_path: ["thermalDiff/thm2.gif", "thermalDiff/thm1.png",],
+            githubLink: "https://github.com/yashmohod/Thermal-Diffusion.git"
+        },
+
         {
             title: "32-Bit CPU",
             description: "This is a 32-bit CPU simulation in digital circuit software in which I implemented a basic instruction set to move data, perform arithmetic, and perform some logical operations. ",
@@ -32,16 +41,30 @@ export default function Home() {
             githubLink: "https://github.com/yashmohod/CPU"
         },
         {
+            title: "ADA Map",
+            description: "This web application was developed for the Occupational Therapy students at Ithaca College to make a map and rate routes. These rating will later be used to make a map to help new students with disabilities to plan their way around the hilly Ithaca College campus. ",
+            img_path: ["ada/ada1.png", "ada/ada2.png", "ada/ada3.png",],
+            githubLink: "https://github.com/yashmohod/ADA_maps.git"
+        },
+        {
             title: "SLM Interface",
             description: temp_description,
             img_path: ["slm/slm.png"],
             githubLink: "https://github.com/yashmohod/SLM_interface"
-        }
+        },
+        {
+            title: "Anzen V1",
+            description: "This is the first version of Anzen which was made using Django to create the entire app.",
+            img_path: ["anzen_v1/anzen1.png", "anzen_v1/anzen2.png", "anzen_v1/anzen3.png",],
+            githubLink: "https://github.com/yashmohod/Anzen.git"
+        },
     ]
 
     return (
         <div className="flex flex-col ">
-
+            {/* <img src={"test.gif"}
+                alt="Picture of the author"
+                className="absolute fixed z-[-1]" /> */}
             <div className="flex flex-col sm:flex-row w-100% h-dvh sm:h-dvh  justify-center">
                 <div className="flex flex-col w-100% h-3/5 sm:h-full  sm:w-1/2 justify-end sm:justify-center items-center sm:pt-5">
                     <Image
