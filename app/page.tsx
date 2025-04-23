@@ -62,9 +62,9 @@ export default function Home() {
 
     return (
         <div className="flex flex-col ">
-            {/* <img src={"test.gif"}
+            <img src={"test.gif"}
                 alt="Picture of the author"
-                className="absolute fixed z-[-1]" /> */}
+                className="absolute fixed z-[-1]" />
             <div className="flex flex-col sm:flex-row w-100% h-dvh sm:h-dvh  justify-center">
                 <div className="flex flex-col w-100% h-3/5 sm:h-full  sm:w-1/2 justify-end sm:justify-center items-center sm:pt-5">
                     <Image
@@ -78,7 +78,7 @@ export default function Home() {
                     <h1 className="text-center text-4xl">
                         Hi, I am Yash.
                     </h1>
-                    <p className="text-justify w-4/5">
+                    <p className="text-justify w-4/5 bg-black backdrop-opacity-10">
                         I am a curious person ready to jump onto the next exciting puzzle. Equipped with knowledge in Physics and Computer Science
                     </p>
                     <div className="flex flex-row w-100% pt-4">
