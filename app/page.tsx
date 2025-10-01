@@ -41,23 +41,12 @@ export default function Home() {
             githubLink: "https://github.com/yashmohod/CPU"
         },
         {
-            title: "ADA Map",
-            description: "This web application was developed for the Occupational Therapy students at Ithaca College to make a map and rate routes. These rating will later be used to make a map to help new students with disabilities to plan their way around the hilly Ithaca College campus. ",
-            img_path: ["ada/ada1.png", "ada/ada2.png", "ada/ada3.png",],
-            githubLink: "https://github.com/yashmohod/ADA_maps.git"
-        },
-        {
             title: "SLM Interface",
             description: temp_description,
             img_path: ["slm/slm.png"],
             githubLink: "https://github.com/yashmohod/SLM_interface"
         },
-        {
-            title: "Anzen V1",
-            description: "This is the first version of Anzen which was made using Django to create the entire app.",
-            img_path: ["anzen_v1/anzen1.png", "anzen_v1/anzen2.png", "anzen_v1/anzen3.png",],
-            githubLink: "https://github.com/yashmohod/Anzen.git"
-        },
+
     ]
 
     return (
